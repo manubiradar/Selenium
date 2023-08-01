@@ -26,7 +26,7 @@ public class Alerts {
 		driver.findElement(By.id("timerAlertButton")).click();
 		WebDriverWait wait = new WebDriverWait(driver,6);
 		wait.until(ExpectedConditions.alertIsPresent());
-		//Thread.sleep(6000 );..
+		//Thread.sleep(6000 );
 		Alert popup2 = driver.switchTo().alert();
 		popup2.accept();
 		
